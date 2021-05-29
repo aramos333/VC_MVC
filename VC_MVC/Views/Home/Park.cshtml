@@ -1,0 +1,14 @@
+﻿@model VC_MVC.Models.Parks
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+@foreach (VC_MVC.Models.Park park in Model.data)
+{
+
+    @(park.parkCode + " " + park.fullName + " " + park.latLong)
+    <br />
+}
+
